@@ -1,7 +1,10 @@
 # LangChain Core
 langchain
 langchain-core
-
+langchain-text-splitters
+PyPDF2
+faiss-cpu
+streamlit
 # OpenAI Integration
 langchain-openai
 openai
@@ -22,5 +25,7 @@ huggingface-hub
 python-dotenv
 
 # Machine Learning Utilities
+
 numpy
 scikit-learn
+
