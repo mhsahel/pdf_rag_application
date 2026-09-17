@@ -10,8 +10,6 @@ PyPDF2
 faiss-cpu
 python-dotenv
 
-sentence-transformers
-torch
-transformers
+
 
 
