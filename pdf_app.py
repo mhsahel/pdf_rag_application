@@ -14,7 +14,7 @@ from langchain_classic.chains import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
-from langchain_huggingface import HuggingFaceEmbeddings
+
 
 
 
@@ -39,7 +39,7 @@ def get_text_chunk(text):
 
 
 def get_vector_store(chunks):
-    embedd_model = HuggingFaceEmbeddings(model_name ="Qwen/Qwen3-Embedding-8B")
+    embedd_model = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
     vectors = FAISS.from_texts(texts=chunks, embedding=embedd_model)
     return vectors
 
