@@ -3,9 +3,11 @@ langchain
 langchain-classic
 langchain-community
 langchain-google-genai
+langchain-huggingface
 langchain-core
 langchain-text-splitters
 PyPDF2
 faiss-cpu
 python-dotenv
+
 
